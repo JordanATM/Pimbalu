@@ -157,6 +157,8 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 100px;
   position: relative;
   overflow: hidden;
   padding: 120px 32px 80px;
@@ -208,14 +210,12 @@ body {
 
 /* Logo visual en el hero */
 .hero__visual {
-  position: absolute;
-  right: 5vw;
-  top: 50%;
-  transform: translateY(-50%);
+  position: relative;
   z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 .hero__logo-wrap {
   position: relative;
