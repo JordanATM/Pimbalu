@@ -129,8 +129,8 @@
       <div class="productos__grid">
 
         <div class="producto-card">
-          <div class="producto-card__img" style="background: linear-gradient(135deg,#DDD5F8,#9B8ED4)">
-            <i data-lucide="candy"></i>
+          <div class="producto-card__img">
+            <img src="img/candypop.jpg" alt="Chupetines artesanales Pimbalú" />
           </div>
           <div class="producto-card__body">
             <h3>Chupetines artesanales</h3>
@@ -140,8 +140,8 @@
         </div>
 
         <div class="producto-card">
-          <div class="producto-card__img" style="background: linear-gradient(135deg,#C9B8E8,#7B6FC0)">
-            <i data-lucide="layers"></i>
+          <div class="producto-card__img">
+            <img src="img/chocolatebar.jpg" alt="Tabletas de chocolate artesanal Pimbalú" />
           </div>
           <div class="producto-card__body">
             <h3>Tabletas de chocolate</h3>
@@ -151,8 +151,8 @@
         </div>
 
         <div class="producto-card">
-          <div class="producto-card__img" style="background: linear-gradient(135deg,#F5D5E8,#C44B8A)">
-            <i data-lucide="cake"></i>
+          <div class="producto-card__img">
+            <img src="img/cupcake.jpg" alt="Cupcakes personalizados Pimbalú" />
           </div>
           <div class="producto-card__body">
             <h3>Cupcakes personalizados</h3>
@@ -162,8 +162,8 @@
         </div>
 
         <div class="producto-card">
-          <div class="producto-card__img" style="background: linear-gradient(135deg,#EDE5FF,#4E3D9E)">
-            <i data-lucide="utensils"></i>
+          <div class="producto-card__img">
+            <img src="img/caramelpudding.jpg" alt="Flan y postres caseros Pimbalú" />
           </div>
           <div class="producto-card__body">
             <h3>Flan y postres</h3>
@@ -173,8 +173,8 @@
         </div>
 
         <div class="producto-card">
-          <div class="producto-card__img" style="background: linear-gradient(135deg,#F9E8F4,#922361)">
-            <i data-lucide="star"></i>
+          <div class="producto-card__img">
+            <img src="img/colorfullcandy.jpg" alt="Caramelos surtidos Pimbalú" />
           </div>
           <div class="producto-card__body">
             <h3>Caramelos surtidos</h3>
@@ -348,11 +348,14 @@
       </div>
     </div>
     <div class="footer__bottom">
-      <p>© 2025 Pimbalú Delicias Caseras · Hecho con 🍬 y mucho amor</p>
+      <p>© <span id="footer-year"></span> Pimbalú Delicias Caseras · Desarrollado por <a href="https://www.codealab.cl/" target="_blank" class="footer__credit">CodeaLab.cl</a></p>
     </div>
   </footer>
 
   <script src="script.js"></script>
-  <script>lucide.createIcons();</script>
+  <script>
+    lucide.createIcons();
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
