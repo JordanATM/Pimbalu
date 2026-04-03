@@ -1,5 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import pimbaluImg from '../assets/img/pimbaluimg.jpg';
+import candypopImg from '../assets/img/candypop.jpg';
+import chocolatebarImg from '../assets/img/chocolatebar.jpg';
+import cupcakeImg from '../assets/img/cupcake.jpg';
+import caramelpuddingImg from '../assets/img/caramelpudding.jpg';
+import colorfullcandyImg from '../assets/img/colorfullcandy.jpg';
 ---
 
 <Layout>
@@ -7,7 +14,7 @@ import Layout from '../layouts/Layout.astro';
   <!-- NAV -->
   <nav class="nav">
     <a class="nav__logo" href="#">
-      <img class="nav__logo-img" src="/img/pimbaluimg.jpg" alt="Logo Pimbalú" />
+      <Image class="nav__logo-img" src={pimbaluImg} alt="Logo Pimbalú" width={44} height={44} loading="eager" />
       <span class="nav__logo-text">Pimbalú</span>
     </a>
     <ul class="nav__links">
@@ -44,7 +51,7 @@ import Layout from '../layouts/Layout.astro';
         <div class="hero__dots">
           <span></span><span></span><span></span><span></span>
         </div>
-        <img class="hero__logo-img" src="/img/pimbaluimg.jpg" alt="Pimbalú Delicias Caseras" />
+        <Image class="hero__logo-img" src={pimbaluImg} alt="Pimbalú Delicias Caseras" width={380} height={380} loading="eager" fetchpriority="high" />
       </div>
     </div>
     <div class="hero__wave">
@@ -86,7 +93,7 @@ import Layout from '../layouts/Layout.astro';
 
         <div class="producto-card">
           <div class="producto-card__img">
-            <img src="/img/candypop.jpg" alt="Chupetines artesanales Pimbalú" />
+            <Image src={candypopImg} alt="Chupetines artesanales Pimbalú" width={600} height={400} />
           </div>
           <div class="producto-card__body">
             <h3>Chupetines artesanales</h3>
@@ -97,7 +104,7 @@ import Layout from '../layouts/Layout.astro';
 
         <div class="producto-card">
           <div class="producto-card__img">
-            <img src="/img/chocolatebar.jpg" alt="Tabletas de chocolate artesanal Pimbalú" />
+            <Image src={chocolatebarImg} alt="Tabletas de chocolate artesanal Pimbalú" width={600} height={400} />
           </div>
           <div class="producto-card__body">
             <h3>Tabletas de chocolate</h3>
@@ -108,7 +115,7 @@ import Layout from '../layouts/Layout.astro';
 
         <div class="producto-card">
           <div class="producto-card__img">
-            <img src="/img/cupcake.jpg" alt="Cupcakes personalizados Pimbalú" />
+            <Image src={cupcakeImg} alt="Cupcakes personalizados Pimbalú" width={600} height={400} />
           </div>
           <div class="producto-card__body">
             <h3>Cupcakes personalizados</h3>
@@ -119,7 +126,7 @@ import Layout from '../layouts/Layout.astro';
 
         <div class="producto-card">
           <div class="producto-card__img">
-            <img src="/img/caramelpudding.jpg" alt="Flan y postres caseros Pimbalú" />
+            <Image src={caramelpuddingImg} alt="Flan y postres caseros Pimbalú" width={600} height={400} />
           </div>
           <div class="producto-card__body">
             <h3>Flan y postres</h3>
@@ -130,7 +137,7 @@ import Layout from '../layouts/Layout.astro';
 
         <div class="producto-card">
           <div class="producto-card__img">
-            <img src="/img/colorfullcandy.jpg" alt="Caramelos surtidos Pimbalú" />
+            <Image src={colorfullcandyImg} alt="Caramelos surtidos Pimbalú" width={600} height={400} />
           </div>
           <div class="producto-card__body">
             <h3>Caramelos surtidos</h3>
@@ -159,7 +166,7 @@ import Layout from '../layouts/Layout.astro';
         <div class="nosotros__logo-container">
           <div class="nosotros__logo-ring"></div>
           <div class="nosotros__logo-ring-2"></div>
-          <img class="nosotros__logo-img" src="/img/pimbaluimg.jpg" alt="Pimbalú" />
+          <Image class="nosotros__logo-img" src={pimbaluImg} alt="Pimbalú" width={300} height={300} />
         </div>
       </div>
       <div class="nosotros__text">
@@ -290,7 +297,7 @@ import Layout from '../layouts/Layout.astro';
     <div class="container footer__inner">
       <div class="footer__brand">
         <div class="footer__logo-wrap">
-          <img class="footer__logo-img" src="/img/pimbaluimg.jpg" alt="Logo Pimbalú" />
+          <Image class="footer__logo-img" src={pimbaluImg} alt="Logo Pimbalú" width={36} height={36} />
           <span class="footer__logo">Pimbalú</span>
         </div>
         <p>Delicias Caseras hechas con amor.</p>
